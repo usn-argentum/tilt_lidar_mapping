@@ -55,7 +55,7 @@ class TiltScanToCloud(Node):
         super().__init__('tilt_scan_to_cloud')
 
         self.declare_parameter('angle_topic', '/lidar_tilt/angle_rad')
-        self.declare_parameter('output_frame', 'lidar_tilt_base_link')
+        self.declare_parameter('output_frame', 'base_scan')
         self.declare_parameter('angle_buffer_seconds', 2.0)
         self.declare_parameter('max_angle_buffer_len', 500)
 
